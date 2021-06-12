@@ -1,5 +1,8 @@
 services:
-  website:
-    build: .
+  jekyll:
+    image: jekyll/jekyll:latest
+    command: jekyll serve --verbose
     ports:
-      - "80:80"
+      - 80:4000
+    volumes:
+      - .:/srv/jekyll
