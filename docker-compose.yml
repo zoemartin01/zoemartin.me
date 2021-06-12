@@ -3,6 +3,6 @@ services:
     image: jekyll/jekyll:latest
     command: jekyll serve --verbose
     ports:
-      - 80:4000
+      - 8070:4000
     volumes:
       - .:/srv/jekyll
